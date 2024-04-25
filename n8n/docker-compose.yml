@@ -41,6 +41,8 @@ services:
     container_name: n8n_manager
     environment:
       - N8N_HOST=n8n.supercapsp.email
+      - N8N_PORT=5678
+      - N8N_EDITOR_BASE_URL=https://n8n.supercapsp.email/
       - NODE_ENV=production
       - WEBHOOK_URL=https://n8n.supercapsp.email/
       - DB_TYPE=postgresdb
