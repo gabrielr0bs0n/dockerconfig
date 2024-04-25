@@ -19,6 +19,7 @@ services:
       interval: 2h
       timeout: 5s
       retries: 10
+      start_period: 10s
 
   redis:
     image: redis:7.2.4
@@ -33,6 +34,7 @@ services:
       interval: 2h
       timeout: 5s
       retries: 10
+      start_period: 10s
 
   n8n:
     image: n8nio/n8n
