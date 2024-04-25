@@ -44,6 +44,11 @@ services:
       - NODE_ENV=production
       - WEBHOOK_URL=https://n8n.supercapsp.email/
       - DB_TYPE=postgresdb
+      - N8N_EMAIL_MODE=smtp
+      - N8N_SMTP_HOST=mail.multibet.site
+      - N8N_SMTP_PORT=465
+      - N8N_SMTP_USER=admin@multibet.site
+      - N8N_SMTP_PASS=64gV5|$Eah£4
       - DB_POSTGRESDB_HOST=postgres
       - DB_POSTGRESDB_PORT=5432
       - DB_POSTGRESDB_DATABASE=${POSTGRES_DB}
