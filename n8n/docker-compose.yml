@@ -16,7 +16,7 @@ services:
       - /home/selfhost/init-data.sh:/docker-entrypoint-initdb.d/init-data.sh
     healthcheck:
       test: ['CMD-SHELL', 'pg_isready -h localhost -U ${POSTGRES_USER} -d ${POSTGRES_DB}']
-      interval: 5s
+      interval: 2h
       timeout: 5s
       retries: 10
 
@@ -30,7 +30,7 @@ services:
       - redis_storage:/data
     healthcheck:
       test: ['CMD', 'redis-cli', 'ping']
-      interval: 5s
+      interval: 2h
       timeout: 5s
       retries: 10
 
