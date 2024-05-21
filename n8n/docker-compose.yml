@@ -37,7 +37,7 @@ services:
       start_period: 10s
 
   n8n:
-    image: n8nio/n8n
+    image: n8nio/n8n:1.41.1
     restart: always
     command: "start"
     container_name: n8n_manager
