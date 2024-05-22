@@ -2,6 +2,7 @@ services:
   postgres:
     image: postgres:14.2
     restart: unless-stopped
+    container_name: cw_postgres
     networks:
       - chatwoot
     container_name: n8n_postgres
