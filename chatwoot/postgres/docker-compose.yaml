@@ -16,10 +16,6 @@ services:
       timeout: 5s
       retries: 10
       start_period: 10s
-    resources:
-      limits:
-        cpu: "0.5"
-        memory: 512M
 
 
 volumes:
