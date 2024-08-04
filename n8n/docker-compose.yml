@@ -12,6 +12,7 @@ services:
       - POSTGRES_NON_ROOT_USER
       - POSTGRES_NON_ROOT_PASSWORD
     volumes:
+      - /n8n-files:/files
       - n8n_db_storage:/var/lib/postgresql/data
       - /home/selfhost/init-data.sh:/docker-entrypoint-initdb.d/init-data.sh
     healthcheck:
